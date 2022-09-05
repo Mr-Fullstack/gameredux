@@ -1,4 +1,5 @@
 import theme from '@/theme/theme';
+import { Dispatch } from 'redux';
 
 export interface StateProps {
   game: GameProps;
@@ -8,8 +9,11 @@ export interface StateProps {
 export interface GameProps {
   start_game: boolean;
   pause_game: boolean;
-  pauseGame:() => any;
+  score: number;
+  pauseGame: () => any;
 }
+
+
 export interface AppProps {
   theme: typeof theme,
   theme_name: 'themedark' | 'themelight',

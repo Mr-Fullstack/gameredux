@@ -2,7 +2,8 @@ import { ROUND_GAME, START_GAME, START_ROUND_GAME, PAUSE_GAME, SCORE } from "@/c
 
 const INITIAL_STATE = {
   start_game: false,
-  pause_game: false
+  pause_game: false,
+  score: 0
 }
 
 export function game(state = INITIAL_STATE, action: any) {

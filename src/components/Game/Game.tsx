@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Action from '@/store/actions';
 import { StateProps } from '@/store/types';
 import theme, { themedark } from '@/theme/theme';
+import { Navigate } from 'react-router-dom';
 
 class Game extends React.Component<any> {
 
@@ -19,10 +20,8 @@ class Game extends React.Component<any> {
     return (
       <div>
         <div>{start_game ? 'game iniciado' : 'game não iniciado'}</div>
-        {/* <button onClick={() => this.handlerStartGame()}>Começar game</button> */}
-        <Link to='round-game'>
-          <button >Começar game</button>
-        </Link>
+        <button onClick={() => this.handlerStartGame()}>Começar game</button>
+        {start_game && <Navigate to='round-game' />}
       </div>
     )
   }
