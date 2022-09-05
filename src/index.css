@@ -1,0 +1,26 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html{
+  font-size: 2.5vw;
+}
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media screen and (min-width:1200px) {
+  html{
+    font-size: 62.5%;
+  }
+}
